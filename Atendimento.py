@@ -12,8 +12,8 @@ class Atendimento:
         
         if self.atendimento:
             for processo in self.atendimento:
-                stringRetorno += f"Protocolo: {processo.protocolo}\nNome Interessado(a): {processo.nomeInteressado}\nAssunto: {processo.assunto}\n"
+                stringRetorno += f"\nProtocolo: {processo.protocolo}\nNome Interessado(a): {processo.nomeInteressado}\nAssunto: {processo.assunto}\n"
         else:
-            stringRetorno = "Nenhum processo foi atendido."
+            stringRetorno = "Nenhum processo foi atendido.\n"
             
         return stringRetorno
